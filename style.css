@@ -16,6 +16,10 @@ img {
     object-fit: cover;
 }
 
+body {
+    background: #f3f4f6;
+}
+
 .btn {
     border: 2px solid #1f2937;
     background: #1f2937;
@@ -37,7 +41,8 @@ img {
     border: 2px solid #e5e7eb;
 }
 
-.btn--secondary:hover {
+.btn--secondary:hover,
+.hero__socials a:hover {
     border-color: #1f2937;
     background: #1f2937;
     color: #fff;
@@ -50,7 +55,7 @@ img {
     padding: 20px 60px;
 }
 
-.navbar--logo {
+.navbar__logo {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -97,4 +102,70 @@ img {
     padding: 6px 10px;
     font-size: 12px;
     font-weight: 500;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    gap: 60px;
+    height: calc(100vh - 75px);
+}
+
+.hero__content,
+.hero__intro {
+    width: 50%;
+}
+
+.hero__image {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+.hero__content h2 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-top: 20px;
+    width: 85%;
+}
+
+.hero__intro {
+    padding-right: 40px;
+}
+
+.hero__intro h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.hero__intro p {
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 10px;
+}
+
+.hero__actions .btn {
+    padding: 6px 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.hero__socials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    right: 30px;
+    top: 20%;
 }
